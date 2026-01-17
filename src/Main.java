@@ -40,7 +40,6 @@ public class Main {
 
         double lengthSum = line1.getLength() + line2.getLength() + line3.getLength();
         System.out.println("Суммарная длина всех трех линий: " + lengthSum);
-        */
 
 //6.3
         PolyLine polyLine = new PolyLine(
@@ -68,9 +67,38 @@ public class Main {
         System.out.println("После PolyLine: " + polyLine.toString());
         lines = polyLine.getLines();
         System.out.println("Массив линий: " + Arrays.toString(lines));
+        */
+
+        /*
+        // 7.1
+        Fraction f1 = new Fraction(1,3);
+        Fraction f2 = new Fraction(2,5);
+        Fraction f3 = new Fraction(7,8);
+
+        Fraction frSum = f1.sum(f2).sum(f3).minus(5);
+        System.out.println(frSum.toString());
+        */
+
+        Student student1 = new Student("Sam", 2, 5, 5);
+        Student student2 = new Student("Max");
+        System.out.println("Студент1 " + student1);
+        System.out.println("Студент2 " + student2);
+
+        student1.addGrade(4);
+        student2.addGrade(2);
+        student2.addGrade(3);
+        System.out.println(student1);
+        System.out.println(student2);
+        student2.addGrade(4);
+        student2.addGrade(5);
+        student2.addGrade(3);
+        System.out.println(student2);
+        System.out.println("Оценки второго студента: " + student2.getGrades());
     }
 
-    public static boolean compare2points(Point p1, Point p2) { return (p1.getX() == p2.getX() && p1.getY() == p2.getY()); }
+    public static boolean compare2points(Point p1, Point p2) {
+        return (p1.getX() == p2.getX() && p1.getY() == p2.getY());
+    }
 }
 
 
