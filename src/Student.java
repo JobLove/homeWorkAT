@@ -23,6 +23,16 @@ public class Student {
 
     }
 
+    public void addGrade (Integer... grades) {
+        for (Integer grade : grades) {
+            if (grade < 2 || grade > 5) {
+                throw new IllegalArgumentException("Все оценки должны быть в диапазоне от 2 до 5");
+            }
+            this.grades.add(grade);
+        }
+
+
+    }
 
     public void addGrade (int grade) {
         if (grade < 2 || grade > 5) {
