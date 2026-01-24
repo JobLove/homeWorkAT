@@ -2,11 +2,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class PolyLine {
+public class PolyLine implements Measurable {
 
     //масств точек
     Point[] pointsArr;
-
     List<Line> linesArr;
 
     public PolyLine() {
@@ -32,7 +31,6 @@ public class PolyLine {
         for (Line line : linesArr) {
             length += line.getLength();
         }
-
         return Math.round(length * 1000) / 1000d;
     }
 

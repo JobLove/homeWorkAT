@@ -39,7 +39,7 @@ public class Main {
         System.out.println("После: Line3 - " + line3.toString());
 
         double lengthSum = line1.getLength() + line2.getLength() + line3.getLength();
-        System.out.println("Суммарная длина всех трех линий: " + lengthSum);
+        System.out.println("Суммарная длина всех трех линий: " + lengthSum);*/
 
 //6.3
         PolyLine polyLine = new PolyLine(
@@ -48,9 +48,9 @@ public class Main {
                 new Point(5, 3),
                 new Point(9, 9));
 
-        System.out.println("До PolyLine: " + polyLine.toString());
+        System.out.println("До PolyLine: " + polyLine);
         System.out.println("Длина ломанной: " + polyLine.getLength());
-
+/*
         Line[] lines = polyLine.getLines();
         System.out.println("Массив линий: " + Arrays.toString(lines));
 
@@ -64,10 +64,22 @@ public class Main {
 
         polyLine.pointsArr[1].setX(12);
 
-        System.out.println("После PolyLine: " + polyLine.toString());
+        System.out.println("После PolyLine: " + polyLine);
         lines = polyLine.getLines();
         System.out.println("Массив линий: " + Arrays.toString(lines));
-        */
+*/
+        ClosedPolyLine closedPolyLine = new ClosedPolyLine(
+                new Point(1, 5),
+                new Point(2, 8),
+                new Point(5, 3),
+                new Point(9, 9),
+                new Point(1, 5));
+
+        System.out.println(closedPolyLine);
+        System.out.println("Длина замкнутой ломанной: " + closedPolyLine.getLength());
+
+        System.out.println("-----printMeasurable-----");
+        printMeasurable(polyLine, closedPolyLine);
 
         /*
         // 7.1
@@ -77,7 +89,7 @@ public class Main {
 
         Fraction frSum = f1.sum(f2).sum(f3).minus(5);
         System.out.println(frSum.toString());
-        */
+
 
         Student student1 = new Student("Sam", 2, 5, 5);
         Student student2 = new Student("Max");
@@ -94,10 +106,14 @@ public class Main {
         student2.addGrade(3);
         System.out.println(student2);
         System.out.println("Оценки второго студента: " + student2.getGrades());
+        */
     }
 
-    public static boolean compare2points(Point p1, Point p2) {
-        return (p1.getX() == p2.getX() && p1.getY() == p2.getY());
+    static void printMeasurable(Measurable... shapes) {
+        for (Measurable shape : shapes) {
+            System.out.println(shape);
+            System.out.println("Длина: " + shape.getLength());
+        }
     }
 }
 
