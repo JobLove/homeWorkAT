@@ -1,6 +1,8 @@
 package ru.сourses.main;
 
 import ru.сourses.math.Fraction;
+import static java.lang.Integer.parseInt;
+import static java.lang.Math.pow;
 
 
 public class Main {
@@ -20,6 +22,17 @@ public class Main {
         sum = sumAll(new Fraction(1,3).doubleValue(),
                 1);
         System.out.println("Sum: "+ sum);
+
+        //8.15
+
+        System.out.println("pow(2,3):" + powXY("2", "3"));
+    }
+
+    public static double powXY(String x, String y) {
+        int baseX = parseInt(x);
+        int powY = parseInt(y);
+
+        return pow(baseX, powY);
     }
 
     static double sumAll(double ...summands){
