@@ -1,6 +1,4 @@
-import java.io.File;
-import java.util.Arrays;
-import java.util.Scanner;
+import ru.сourses.math.Fraction;
 
 
 public class Main {

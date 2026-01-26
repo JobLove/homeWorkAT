@@ -1,4 +1,5 @@
-import java.lang.reflect.Array;
+package ru.сourses.basic;
+
 import java.util.Arrays;
 
 public class Module5 {

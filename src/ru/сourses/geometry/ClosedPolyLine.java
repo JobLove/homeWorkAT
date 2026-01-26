@@ -1,3 +1,5 @@
+package ru.сourses.geometry;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 

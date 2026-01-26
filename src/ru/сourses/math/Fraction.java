@@ -1,3 +1,5 @@
+package ru.сourses.math;
+
 public class Fraction extends Number {
 
     private int num;
