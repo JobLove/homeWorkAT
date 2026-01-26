@@ -1,6 +1,9 @@
 package ru.сourses.main;
 
 import ru.сourses.math.Fraction;
+
+import java.awt.*;
+
 import static java.lang.Integer.parseInt;
 import static java.lang.Math.pow;
 
@@ -26,6 +29,13 @@ public class Main {
         //8.15
 
         System.out.println("pow(2,3):" + powXY("2", "3"));
+
+        //8.16
+        ru.сourses.geometry.Point pointGeometry = new ru.сourses.geometry.Point(2, 3);
+        System.out.println("ru.сourses.geometry.Point: " + pointGeometry);
+
+        Point pointAwt = new Point(3, 4);
+        System.out.println(pointAwt);
     }
 
     public static double powXY(String x, String y) {
