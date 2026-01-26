@@ -1,3 +1,5 @@
+package ru.сourses.main;
+
 import ru.сourses.math.Fraction;
 
 
