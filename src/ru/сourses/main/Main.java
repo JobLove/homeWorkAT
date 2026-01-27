@@ -13,30 +13,45 @@ import static java.lang.Math.pow;
 public class Main {
     static void main(String[] args) throws Exception {
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Введите числа через пробел: ");
-        String inputStr = scanner.nextLine();
-        String[] nums = inputStr.split(" ");
-
         double sum = 0;
 
-        for (String num : nums) {
-            double numDouble;
-            try {
-                numDouble = Double.parseDouble(num);
-            } catch (NumberFormatException e) {
-                numDouble = 0;
+        for (String arg : args) {
+            if (isDigit(arg)) {
+                double numDouble = Double.parseDouble(arg);
+                sum += numDouble;
             }
-
-            sum += numDouble;
         }
 
         System.out.println("Сумма: " + sum);
 
     }
 
-    public static double powXY(String x, String y) {
+    public static boolean isDigit(String str) {
+        if (str == null || str.isEmpty()) {
+            return false;
+        }
+
+        int dotCount = 0;
+        int digitCount = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            if (c == '.') {
+                dotCount++;
+                if (dotCount > 1) return false;
+            } else if (c == '-' || c == '+') {
+                if (i != 0) return false;
+            } else if (Character.isDigit(c)) {
+                digitCount++;
+        } else {
+                return false;
+            }
+    }
+
+        return digitCount >0;
+}
+
+    /*public static double powXY(String x, String y) {
         int baseX = parseInt(x);
         int powY = parseInt(y);
 
@@ -51,7 +66,7 @@ public class Main {
         }
 
         return sum;
-    }
+    }*/
 }
 
 
