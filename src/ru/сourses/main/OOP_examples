@@ -67,4 +67,7 @@
         System.out.println(pl1.equals(pl2));
         System.out.println(pl1.equals(pl3));
         System.out.println(pl1.equals(plClone));
-    }
+
+    //9.2.1
+    Sauce sauce = new Sauce("Острый соус", Spiciness.SPICY);
+            System.out.println(sauce);
