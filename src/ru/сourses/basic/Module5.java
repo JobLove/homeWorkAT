@@ -1,11 +1,14 @@
+
 package ru.сourses.basic;
 
 import java.util.Arrays;
 
 public class Module5 {
-    static void main(String[] args) {
 
-    /*    //task 5.1
+
+
+    /*
+        //task 5.1
         System.out.println("Проверка задачи 5.1");
         System.out.println(listNums(15));
 
@@ -108,7 +111,8 @@ public class Module5 {
         int[] arr = {1, 2, 3, 4, 5};
         int[] newArr = add(arr, 1800, 2);
         for (int i = 0; i < newArr.length; i++) System.out.print(newArr[i] + " ");
-        */
+        *//*
+
 
 
         int[] arr = {1, 2, 3, 4, 5};
@@ -421,7 +425,8 @@ public class Module5 {
         return newArray;
     }
 
-    /*
+    */
+/*
     public static int[] add(int[] arr, int[] ins, int pos) {
         int[] result = new int[arr.length + ins.length];
 
@@ -437,7 +442,9 @@ public class Module5 {
 
         return result;
     }
-    */
+    *//*
 
+
+ */
 
 }

@@ -1,15 +1,16 @@
+
 package ru.сourses.basic;
 
 public class Module4
-{
-    public static void main(String[] args) {
+{/*
         System.out.println(fraction(4.563136)); //1
-        /*System.out.println(sumLastNums(1234299)); //2
+        System.out.println(sumLastNums(1234299)); //2
         System.out.println(charToNum('0')); //3
         System.out.println(isPositive(1)); /4
-        */
+
+
         //task 6
-      /*  System.out.println("Upper case: ");
+  System.out.println("Upper case: ");
         System.out.println(isUpperCase('Q'));
         System.out.println(isUpperCase('W'));
         System.out.println(isUpperCase('E'));
@@ -66,9 +67,9 @@ public class Module4
         System.out.println(isUpperCase('!'));
         System.out.println(isUpperCase('1'));
         System.out.println(isUpperCase('&'));
-*/
+
+
         //7 task
-        /*
         System.out.println(isInRange(3,1,4));
         System.out.println(isInRange(13,1,4));
         System.out.println(isInRange(13,14,4));
@@ -77,10 +78,11 @@ public class Module4
         System.out.println(isInRange(3,100,100));
         System.out.println(isInRange(1,5,5));
         System.out.println(isInRange(14,14,14));
-        System.out.println(isInRange(1,14,1));*/
+        System.out.println(isInRange(1,14,1));
+
 
         //task8
-        /*System.out.println(isDivisor(14, 7));
+System.out.println(isDivisor(14, 7));
         System.out.println(isDivisor(7, 14));
         System.out.println(isDivisor(7, 7));
         System.out.println(isDivisor(6, 3));
@@ -88,54 +90,61 @@ public class Module4
         System.out.println(isDivisor(1, 1));
         System.out.println("false starting:");
         System.out.println(isDivisor(7, 22));
-        System.out.println(isDivisor(17, 2));*/
+        System.out.println(isDivisor(17, 2));
+
 
         //task 9
-        /*System.out.println(isEqual(3,3,3));
+System.out.println(isEqual(3,3,3));
         System.out.println(isEqual(3,3,4));
         System.out.println(isEqual(3,2,3));
-        System.out.println(isEqual(1,3,3));*/
+        System.out.println(isEqual(1,3,3));
+
 
         //task 10
-        /*int res = lastNumSum(5,11);
+int res = lastNumSum(5,11);
         res = lastNumSum(res,123);
         res = lastNumSum(res,14);
-        System.out.println(res = lastNumSum(res,1));*/
+        System.out.println(res = lastNumSum(res,1));
+
 
         //task 11
-        /*System.out.println(abs(0));
+System.out.println(abs(0));
         System.out.println(abs(1));
         System.out.println(abs(-1));
         System.out.println(abs(10));
-        System.out.println(abs(-89));*/
+        System.out.println(abs(-89));
+
 
         //task12
-        /*System.out.println(safeDiv(10,2));
+System.out.println(safeDiv(10,2));
         System.out.println(safeDiv(10,0));
         System.out.println(safeDiv(11,1));
         System.out.println(safeDiv(0,1));
         System.out.println(safeDiv(48,8));
-        System.out.println(safeDiv(144,12));*/
+        System.out.println(safeDiv(144,12));
+
 
         //task 1.3
-        /*System.out.println(max(1,2));
+System.out.println(max(1,2));
         System.out.println(max(0,4));
         System.out.println(max(1,0));
         System.out.println(max(8,-5));
         System.out.println(max(-8,5));
-        System.out.println(max(0,-1));*/
+        System.out.println(max(0,-1));
+
 
         //task 1.4
-       /* System.out.println(makeDecision(1,3));
+ System.out.println(makeDecision(1,3));
         System.out.println(makeDecision(13,3));
         System.out.println(makeDecision(-8,-8));
         System.out.println(makeDecision(98,98));
         System.out.println(makeDecision(0,98));
         System.out.println(makeDecision(10,0));
-        System.out.println(makeDecision(0,0));*/
+        System.out.println(makeDecision(0,0));
+
 
         //task 1.5
-        /*System.out.println(max3(5,14, 3));
+System.out.println(max3(5,14, 3));
         System.out.println(max3(25,14, 3));
         System.out.println(max3(25,14, 31));
         System.out.println(max3(8,7, 8));
@@ -144,35 +153,39 @@ public class Module4
         System.out.println(max3(25,-14, 31));
         System.out.println(max3(-5,-7, -15));
         System.out.println(max3(-15,-7, -8));
-        System.out.println(max3(-15,-17, -8));*/
+        System.out.println(max3(-15,-17, -8));
+
 
         //task 1.6
-        /*System.out.println(sum3(5,7,12));
+System.out.println(sum3(5,7,12));
         System.out.println(sum3(15,3,12));
         System.out.println(sum3(5,17,12));
         System.out.println(sum3(5,17,1));
         System.out.println(sum3(5,5,0));
         System.out.println(sum3(-5,5,0));
-        System.out.println(sum3(-5,-5,-13));*/
+        System.out.println(sum3(-5,-5,-13));
+
 
         //task 1.7
-        /*System.out.println(sum2(-5,5));
+System.out.println(sum2(-5,5));
         System.out.println(sum2(-5,-5));
         System.out.println(sum2(-5,14));
         System.out.println(sum2(-5,15));
         System.out.println(sum2(5,10));
         System.out.println(sum2(5,14));
         System.out.println(sum2(6,15));
-        System.out.println(sum2(25,5));*/
+        System.out.println(sum2(25,5));
+
 
         //task 1.8
-        /*System.out.println(is35(15));
+System.out.println(is35(15));
         System.out.println(is35(3));
         System.out.println(is35(5));
-        System.out.println(is35(1));*/
+        System.out.println(is35(1));
+
 
         //task 1.9
-        /*System.out.println(magic6(6,0));
+System.out.println(magic6(6,0));
         System.out.println(magic6(0,6));
         System.out.println(magic6(3,3));
         System.out.println(magic6(4,2));
@@ -182,7 +195,8 @@ public class Module4
         System.out.println(magic6(7,13));
         System.out.println(magic6(-6,-6));
         System.out.println(magic6(-6,5));
-        System.out.println(magic6(7,5));*/
+        System.out.println(magic6(7,5));
+
 
         //task 1.10
         for (int i = 0; i <= 155; i++) {
@@ -211,11 +225,12 @@ public class Module4
         System.out.println(age(8125));
 
         //task 1.11
-        /*for (int i = 0; i <= 10; i++) {
+for (int i = 0; i <= 10; i++) {
             System.out.println(day(i));
-        }*/
+        }
 
-       /* //task 1.12
+
+ //task 1.12
         printDays("понедельник");
         printDays("sdf");
         printDays("Вторник");
@@ -232,7 +247,8 @@ public class Module4
         printDays("вторник");
         printDays("четверг");
         printDays("суббота");
-        printDays("воскресенье");*/
+        printDays("воскресенье");
+
 
 
     }
@@ -442,6 +458,7 @@ public class Module4
             default:
                 System.out.println("это не день недели");
         }
-
+*/
     }
-}
+
+
