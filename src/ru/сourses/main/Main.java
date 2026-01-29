@@ -10,6 +10,7 @@ import static java.lang.Math.pow;
 
 public class Main {
     static void main(String[] args) {
+        if(args.length>2) throw new IllegalArgumentException("Передано больше 2х аругментов");
        //8.6
         double sum = sumAll(2,
                 new Fraction(3,5).doubleValue(),
@@ -28,7 +29,7 @@ public class Main {
 
         //8.15
 
-        System.out.println("pow(2,3):" + powXY("2", "3"));
+        System.out.println("pow(2,3):" + powXY(args[0], args[1]));
 
         //8.16
         ru.сourses.geometry.Point pointGeometry = new ru.сourses.geometry.Point(2, 3);
