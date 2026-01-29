@@ -53,6 +53,18 @@ public class Main {
         System.out.println(pl1.equals(pl2));
         System.out.println(pl1.equals(pl3));
         System.out.println(pl1.equals(plClone));
+
+        System.out.println("---------------");
+        PolyLine first = new PolyLine(new Point(1, 2),
+                new Point(2, 3),
+                new Point(3, 4));
+        System.out.println(first);
+
+        PolyLine second = first.clone();
+        System.out.println(second);
+        first.getPointsArr()[0].setX(10);
+        System.out.println(first);
+        System.out.println(second);
     }
 
     public static double powXY(String x, String y) {

@@ -44,8 +44,11 @@ public class PolyLine implements Measurable {
 
     @Override
     public PolyLine clone() {
-        PolyLine p = new PolyLine(pointsArr);
-        return p;
+        Point[] res = new Point[pointsArr.length];
+        for (int i = 0; i < pointsArr.length; i++) {
+          res[i] = pointsArr[i].clone();
+        }
+        return new PolyLine(res);
     }
 
     @Override
@@ -59,4 +62,12 @@ public class PolyLine implements Measurable {
     public int hashCode() {
         return Objects.hash(Arrays.hashCode(pointsArr), linesArr);
     }
+
+    //
+
+    public Point[] getPointsArr() {
+        return pointsArr;
+    }
+
+    //
 }
