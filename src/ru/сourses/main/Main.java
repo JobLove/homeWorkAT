@@ -1,72 +1,33 @@
 package ru.сourses.main;
 
-import ru.сourses.geometry.PolyLine;
-import ru.сourses.geometry.Point;
-import ru.сourses.geometry.Line;
 
-import java.util.Scanner;
 
-import static java.lang.Integer.parseInt;
-import static java.lang.Math.pow;
+import ru.сourses.collectionsTask.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 public class Main {
     static void main(String[] args) throws Exception {
 
-        double sum = 0;
-
-        for (String arg : args) {
-            if (isDigit(arg)) {
-                double numDouble = Double.parseDouble(arg);
-                sum += numDouble;
-            }
+        //10.1
+        int size = 4;
+        List<Integer> listInt = new ArrayList<>();
+        for (int i = 0; i < size; i++) {
+            listInt.add(i);
         }
 
-        System.out.println("Сумма: " + sum);
+        Module10.listPairChange(listInt);
 
+        //10.2
+        Module10.bubbleSort(new int[]{1, 3, 2, 5, 4, 6});
+
+        //10.3
+        Module10.reverse(new int[]{1, 3, 2, 5, 4, 6});
+        Module10.reverse(new ArrayList<>(Arrays.asList(1, 2, 4, 5, 6)));
     }
-
-    public static boolean isDigit(String str) {
-        if (str == null || str.isEmpty()) {
-            return false;
-        }
-
-        int dotCount = 0;
-        int digitCount = 0;
-
-        for (int i = 0; i < str.length(); i++) {
-            char c = str.charAt(i);
-            if (c == '.') {
-                dotCount++;
-                if (dotCount > 1) return false;
-            } else if (c == '-' || c == '+') {
-                if (i != 0) return false;
-            } else if (Character.isDigit(c)) {
-                digitCount++;
-        } else {
-                return false;
-            }
-    }
-
-        return digitCount >0;
-}
-
-    /*public static double powXY(String x, String y) {
-        int baseX = parseInt(x);
-        int powY = parseInt(y);
-
-        return pow(baseX, powY);
-    }
-
-    static double sumAll(double... summands) {
-        double sum = 0;
-
-        for (double summand : summands) {
-            sum += summand;
-        }
-
-        return sum;
-    }*/
 }
 
 
