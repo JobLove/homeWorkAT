@@ -23,8 +23,8 @@ public class Point implements Cloneable{
     public String toString() { return "{" + x + ";" + y + "}"; }
 
     @Override
-    public Point clone() throws CloneNotSupportedException {
-        return (Point) super.clone();
+    public Point clone() {
+        return new Point(x,y);
     }
 
     @Override
